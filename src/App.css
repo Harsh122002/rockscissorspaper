@@ -64,3 +64,18 @@ h1 {
   width: 40%;
   margin: 1rem auto;
 }
+button{
+  padding: 0.5rem 1rem;
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+ margin: 10px auto;
+}
+button:hover{
+  background-color: white;
+  color: blueviolet;
+}

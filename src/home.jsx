@@ -67,6 +67,13 @@ export default function Home() {
                <div className='message'>
                     <p>Play Game</p>
                </div>
+               <button className='reset' onClick={() => {
+                    document.querySelector('.scores__user h1').innerText = 0;
+                    document.querySelector('.scores__computer h1').innerText = 0;
+                    document.querySelector('.message p').innerText = 'Play Game';
+                    document.querySelector('.message p').style.color= 'black';
+               }
+               }>Reset</button>
                <div className='game__description'>
                     <h2>How to play</h2>
                     <ul>
