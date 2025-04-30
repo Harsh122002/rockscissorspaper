@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { HiMenu, HiX } from 'react-icons/hi';
 import { useAuth } from '../context/AuthContext';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -66,9 +66,9 @@ export default function Header() {
           {user && (
             <div className="text-green-800 font-semibold mb-2">Welcome, {user.name}</div>
           )}
-          <a href="/" className="py-2 text-gray-800 font-medium hover:underline">Home</a>
-          <a href="/rule" className="py-2 text-gray-800 font-medium hover:underline">Rules</a>
-          <a href="/howtoplay" className="py-2 text-gray-800 font-medium hover:underline">How to play</a>
+          <Link href="/" className="py-2 text-gray-800 font-medium hover:underline">Home</Link>
+          <Link href="/rule" className="py-2 text-gray-800 font-medium hover:underline">Rules</Link>
+          <Link href="/howtoplay" className="py-2 text-gray-800 font-medium hover:underline">How to play</Link>
           {user ? (
             <button
               onClick={handleLogout}
