@@ -38,14 +38,14 @@ export default function Header() {
         {user ? (
           <button
             onClick={handleLogout}
-            className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg transition"
+            className="bg-red-600 hover:bg-red-700  cursor-pointer text-white px-4 py-2 rounded-lg transition"
           >
             Logout
           </button>
         ) : (
           <button
             onClick={handleLogin}
-            className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition"
+            className="bg-blue-600 hover:bg-blue-700  cursor-pointer text-white px-4 py-2 rounded-lg transition"
           >
             Login
           </button>
