@@ -74,7 +74,7 @@ export default function Register() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition"
+              className="bg-blue-600 text-white py-2 px-4 rounded-lg cursor-pointer hover:bg-blue-700 transition"
             >
               {isSubmitting ? 'Registering...' : 'Register'}
             </button>
